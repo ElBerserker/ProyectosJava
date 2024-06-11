@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence           http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <persistence-unit name="com.demo_microservices-ws_jar_0.0.1-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.demo.microservicesws.models.Countries</class>
+    <class>com.demo.microservicesws.models.Regions</class>
+    <class>com.demo.microservicesws.models.Continents</class>
+    <class>com.demo.microservicesws.models.CountryStats</class>
+    <class>com.demo.microservicesws.models.RegionAreas</class>
+    <class>com.demo.microservicesws.models.CountryLanguages</class>
+    <class>com.demo.microservicesws.models.Languages</class>
+    <class>com.demo.microservicesws.models.User</class>
+    <class>com.demo.microservicesws.models.SatisfactionSurvey</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/nation?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="Berserker_db"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="db_maria1.1"/>
+    </properties>
+  </persistence-unit>
+</persistence>
